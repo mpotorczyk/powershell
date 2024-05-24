@@ -6,7 +6,7 @@ param (
     [Parameter(Mandatory=$true)] 
     [String] $RG
 )
-
+$VMname = "mp-dev-app01vm"
 # Ensures you do not inherit an AzContext in your runbook
 Disable-AzContextAutosave -Scope Process
 
